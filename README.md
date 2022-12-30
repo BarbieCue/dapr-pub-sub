@@ -43,7 +43,7 @@ message broker without making any code changes.
 
 Alternatively, build each service in a single step
 ```shell
-./gradlew buildFatJar -p untitled
+./gradlew buildFatJar -p inventory
 ./gradlew buildFatJar -p stock
 ./gradlew buildFatJar -p catalog
 ```
@@ -51,7 +51,7 @@ Alternatively, build each service in a single step
 ### 2. Run each service alongside a dapr sidecar
 
 ```shell
-dapr run --app-id inventory-service --app-port 8080 --dapr-http-port 3500 --components-path components/local -- java -cp untitled/build/libs/fat.jar com.example.InventoryKt
+dapr run --app-id inventory-service --app-port 8080 --dapr-http-port 3500 --components-path components/local -- java -cp inventory/build/libs/fat.jar com.example.InventoryKt
 dapr run --app-id stock-service --app-port 8081 --dapr-http-port 3501 --components-path components/local -- java -cp stock/build/libs/fat.jar com.example.StockKt
 dapr run --app-id catalog-service --app-port 8082 --dapr-http-port 3502 --components-path components/local -- java -cp catalog/build/libs/fat.jar com.example.CatalogKt
 ```
