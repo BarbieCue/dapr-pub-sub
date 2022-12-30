@@ -30,7 +30,7 @@ message broker without making any code changes.
 
 - _dapr_ is [installed](https://docs.dapr.io/getting-started/install-dapr-cli/)
 - Java
-- A running RabbitMQ instance (`docker run -d rabbitmq:3-management`)
+- A running RabbitMQ instance (`docker run --rm -it -p 15672:15672 -p 5672:5672 rabbitmq:3`)
 
 
 ## Get started
