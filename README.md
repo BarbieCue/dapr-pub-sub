@@ -19,11 +19,11 @@ The dapr sidecars take over the direct communication with RabbitMQ.
 
 ## PubSub Component
 
-_dapr_ uses yaml files to specify both, the _Pub/Sub component_ 
+_dapr_ uses yaml files to specify both, the [_Pub/Sub component_](https://docs.dapr.io/operations/components/setup-pubsub/) 
 (RabbitMQ in our case) and the _Pub/Sub subscription_ settings.
 These files are located in `components/local`.
 Using these yaml files enables us to exchange the underlying 
-message broker without making any code changes.
+message broker without making any code changes. 
 
 
 ## Prerequisites
@@ -64,6 +64,8 @@ As you can see, the dapr CLI is used to start up both, the dapr sidecar and the 
 curl -X POST localhost:8080/pencil
 ```
 
+
 # References
 - [dapr concepts](https://docs.dapr.io/concepts/)
-- [dapr publish and subscribe](https://docs.dapr.io/developing-applications/building-blocks/pubsub/pubsub-overview/)
+- [dapr publish and subscribe](https://docs.dapr.io/developing-applications/building-blocks/pubsub/)
+- [dapr how to: publish a message and subscribe to a topic](https://docs.dapr.io/developing-applications/building-blocks/pubsub/howto-publish-subscribe/)
