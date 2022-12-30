@@ -1,4 +1,4 @@
-# dapr example - service invocation
+# dapr example - publish-subscribe
 
 <a href="https://www.dapr.io/"><img src="docs/dapr.svg" alt="dapr" width="100" /></a>
 
