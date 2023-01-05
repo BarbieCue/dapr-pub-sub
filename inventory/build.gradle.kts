@@ -21,7 +21,6 @@ repositories {
 dependencies {
 
     val ktorVersion: String by project
-    val logbackVersion: String by project
 
     // Server
     implementation("io.ktor:ktor-server-core-jvm:$ktorVersion")
@@ -33,9 +32,7 @@ dependencies {
     implementation("io.ktor:ktor-client-cio:$ktorVersion")
     implementation("io.ktor:ktor-client-content-negotiation:$ktorVersion")
     implementation("io.ktor:ktor-client-json:$ktorVersion")
-    implementation("io.ktor:ktor-client-logging:$ktorVersion")
 
     // Common
-    implementation("ch.qos.logback:logback-classic:$logbackVersion")
     implementation("io.ktor:ktor-serialization-kotlinx-json:$ktorVersion")
 }
