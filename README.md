@@ -17,7 +17,7 @@ Instead, they each delegate Pub/Sub operations to their dapr sidecars.
 The dapr sidecars take over the direct communication with RabbitMQ.
 
 
-## PubSub Component
+## Pub/Sub Component
 
 _dapr_ uses yaml files to specify both, the [_Pub/Sub component_](https://docs.dapr.io/operations/components/setup-pubsub/) 
 (RabbitMQ in our case) and the _Pub/Sub subscription_ settings.
