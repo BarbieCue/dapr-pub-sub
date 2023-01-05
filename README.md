@@ -28,8 +28,8 @@ message broker without making any code changes.
 
 ## Prerequisites
 
-- _dapr_ is [installed](https://docs.dapr.io/getting-started/install-dapr-cli/)
-- Java
+- [dapr](https://docs.dapr.io/getting-started/install-dapr-cli/)
+- Java (Version >=17)
 - A running RabbitMQ instance (`docker run --rm -it -p 15672:15672 -p 5672:5672 rabbitmq:3`)
 
 
