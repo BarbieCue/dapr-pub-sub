@@ -17,7 +17,7 @@ Instead, they each delegate Pub/Sub operations to their dapr sidecars.
 The dapr sidecars take over the direct communication with RabbitMQ.
 
 
-## PubSub Component
+## Pub/Sub Component
 
 _dapr_ uses yaml files to specify both, the [_Pub/Sub component_](https://docs.dapr.io/operations/components/setup-pubsub/) 
 (RabbitMQ in our case) and the _Pub/Sub subscription_ settings.
@@ -28,8 +28,8 @@ message broker without making any code changes.
 
 ## Prerequisites
 
-- _dapr_ is [installed](https://docs.dapr.io/getting-started/install-dapr-cli/)
-- Java
+- [dapr CLI](https://docs.dapr.io/getting-started/install-dapr-cli/)
+- Java (Version >=17)
 - A running RabbitMQ instance (`docker run --rm -it -p 15672:15672 -p 5672:5672 rabbitmq:3`)
 
 
