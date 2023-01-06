@@ -35,18 +35,13 @@ message broker without making any code changes.
 
 ## Get started
 
+
 ### 1. Build all services
 
 ```shell
 ./gradlew buildAllServices
 ```
 
-Alternatively, build each service in a single step
-```shell
-./gradlew buildFatJar -p inventory
-./gradlew buildFatJar -p stock
-./gradlew buildFatJar -p catalog
-```
 
 ### 2. Run each service alongside a dapr sidecar
 
