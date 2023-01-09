@@ -30,7 +30,10 @@ message broker without making any code changes.
 
 - [dapr CLI](https://docs.dapr.io/getting-started/install-dapr-cli/)
 - Java (Version >=17)
-- A running RabbitMQ instance (`docker run --rm -it -p 15672:15672 -p 5672:5672 rabbitmq:3`)
+- A running RabbitMQ instance
+  ```shell
+  docker run --rm -it -p 15672:15672 -p 5672:5672 rabbitmq:3
+  ```
 
 
 ## Get started
@@ -46,9 +49,13 @@ message broker without making any code changes.
 ### 2. Run each service alongside a dapr sidecar
 
 ```shell
-dapr run --app-id inventory-service --app-port 8080 --dapr-http-port 3500 --components-path components/local -- java -cp inventory/build/libs/fat.jar com.example.InventoryKt
-dapr run --app-id stock-service --app-port 8081 --dapr-http-port 3501 --components-path components/local -- java -cp stock/build/libs/fat.jar com.example.StockKt
-dapr run --app-id catalog-service --app-port 8082 --dapr-http-port 3502 --components-path components/local -- java -cp catalog/build/libs/fat.jar com.example.CatalogKt
+dapr run --app-id inventory-service --app-port 8080 --dapr-http-port 3500 --components-path components/local -- java -cp inventory/build/libs/fat.jar org.example.InventoryKt
+```
+```shell
+dapr run --app-id stock-service --app-port 8081 --dapr-http-port 3501 --components-path components/local -- java -cp stock/build/libs/fat.jar org.example.StockKt
+```
+```shell
+dapr run --app-id catalog-service --app-port 8082 --dapr-http-port 3502 --components-path components/local -- java -cp catalog/build/libs/fat.jar org.example.CatalogKt
 ```
 
 As you can see, the dapr CLI is used to start up both, the dapr sidecar and the service.

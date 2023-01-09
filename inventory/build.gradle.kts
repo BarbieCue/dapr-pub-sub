@@ -5,7 +5,7 @@ plugins {
 }
 
 application {
-    mainClass.set("com.example.MyServiceKt")
+    mainClass.set("org.example.MyServiceKt")
 }
 
 ktor {

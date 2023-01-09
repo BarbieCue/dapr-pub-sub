@@ -4,7 +4,7 @@ plugins {
 }
 
 application {
-    mainClass.set("com.example.TimeKt")
+    mainClass.set("org.example.TimeKt")
 }
 
 ktor {
