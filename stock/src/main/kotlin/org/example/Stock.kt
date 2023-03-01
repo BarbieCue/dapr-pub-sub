@@ -15,7 +15,7 @@ fun main() {
 }
 
 fun Application.module() {
-    this@module.routing {
+    routing {
 
         post("/item") {
             println("Received message:\n${call.receiveText()}")

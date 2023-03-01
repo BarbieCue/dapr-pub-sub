@@ -31,7 +31,7 @@ data class Item (
 )
 
 fun Application.module() {
-    this@module.routing {
+    routing {
 
         post("/{item}") {
             HttpClient(CIO){
